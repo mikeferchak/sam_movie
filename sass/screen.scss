@@ -1,0 +1,164 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass";
+
+$phi: 1.618;
+
+$base_size: 22px;
+
+$container_size: 28em;
+  $container_px: (28 * $base_size) + px;
+$player_aspect: 0.5625;
+
+$inner_size: $container_size / $phi;
+
+$player_width: $container_size;
+$player_height: $player_width * $player_aspect;
+
+$foreground_color: hsl(220, 1%, 83%);
+$background-color: hsl(228, 4%, 45%);
+
+body {
+  background-color: $background-color;
+  color: $foreground_color;
+  font-family: 'Quicksand', sans-serif;
+  font-size: $base_size;
+}
+
+a, a:link, a:visited {
+  @include transition(all 0.3s);
+  color: $foreground_color;
+  text-decoration: none;
+  &:hover {
+    color: white;
+  }
+}
+
+header {
+  @extend .container;
+
+  hr {
+    margin-left: -15%;
+    margin-right: -15%;
+    @include background(
+      linear-gradient(
+        left,
+        rgba($foreground_color, 0.25),
+        rgba($foreground_color, 1),
+        rgba($foreground_color, 0.25)
+      )
+    );
+    border: none;
+    height: 3px;
+  }
+}
+
+nav {
+  @extend .container;
+
+  ul {
+    margin: 1em auto 2em;
+  }
+  li {
+    @include inline-block;
+    font-weight: 100;
+    width: 48%;
+    padding: 0.5em 0;
+  }
+
+}
+
+footer {
+  text-align: center;
+  position: relative;
+  width: 95%;
+  margin: 3em auto 1em;
+}
+
+small {
+  color: $foreground_color;
+  font-family: 'Baskerville', 'Libre Baskerville', serif;
+  letter-spacing: 2px;
+  font-size: 0.5em;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+.title {
+  font-family: 'Baskerville', 'Libre Baskerville', serif;
+  font-size: 4.8em;
+  text-align: center;
+  margin-top: 0.2em;
+  margin-bottom: 0;
+  font-weight: normal;
+}
+
+.container {
+  width: 95%;
+  max-width: $container_size;
+  margin: 0 auto;
+}
+
+.player {
+  @extend .container;
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.social_links, .ivy_boy_logo, small {
+  display: block;
+  margin: 0 auto 1em;
+}
+
+.social_links a {
+  font-size: 0.8em;
+  padding: 0 0.5em;
+  border-right: 1px solid $foreground_color;
+  &:last-child {
+    border-right: none;
+  }
+}
+
+@media (min-width: 600px) {
+  nav {
+    li {
+      width: 24%;
+    }
+  }
+  .player {
+    padding-bottom: 0;
+    height: $player_height;
+  }
+}
+
+@media (min-width: 1100px) {
+  .ivy_boy_logo {
+    position: absolute;
+    left: 0%;
+    top: -11%;
+  }
+
+  .social_links {
+    position: absolute;
+    right: 0%;
+    top: 2px;
+  }
+
+  small {
+    position: absolute;
+    top: 28px;
+  }
+}
