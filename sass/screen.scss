@@ -18,8 +18,8 @@ $inner_size: $container_size / $phi;
 $player_width: $container_size;
 $player_height: $player_width * $player_aspect;
 
-$foreground_color: hsl(220, 1%, 83%);
-$background-color: hsl(228, 4%, 45%);
+$foreground_color: hsl(220, 1%, 70%);
+$background-color: hsl(228, 4%, 32%);
 
 body {
   background-color: $background-color;

@@ -4,8 +4,8 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 /* line 24, ../sass/screen.scss */
 body {
-  background-color: #6e7077;
-  color: #d3d4d4;
+  background-color: #4e5055;
+  color: #b2b2b3;
   font-family: 'Quicksand', sans-serif;
   font-size: 22px;
 }
@@ -16,7 +16,7 @@ a, a:link, a:visited {
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-  color: #d3d4d4;
+  color: #b2b2b3;
   text-decoration: none;
 }
 /* line 36, ../sass/screen.scss */
@@ -28,11 +28,11 @@ a:hover, a:link:hover, a:visited:hover {
 header hr {
   margin-left: -15%;
   margin-right: -15%;
-  background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(211, 212, 212, 0.25)), color-stop(50%, #d3d4d4), color-stop(100%, rgba(211, 212, 212, 0.25)));
-  background: -webkit-linear-gradient(left, rgba(211, 212, 212, 0.25), #d3d4d4, rgba(211, 212, 212, 0.25));
-  background: -moz-linear-gradient(left, rgba(211, 212, 212, 0.25), #d3d4d4, rgba(211, 212, 212, 0.25));
-  background: -o-linear-gradient(left, rgba(211, 212, 212, 0.25), #d3d4d4, rgba(211, 212, 212, 0.25));
-  background: linear-gradient(left, rgba(211, 212, 212, 0.25), #d3d4d4, rgba(211, 212, 212, 0.25));
+  background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(178, 178, 179, 0.25)), color-stop(50%, #b2b2b3), color-stop(100%, rgba(178, 178, 179, 0.25)));
+  background: -webkit-linear-gradient(left, rgba(178, 178, 179, 0.25), #b2b2b3, rgba(178, 178, 179, 0.25));
+  background: -moz-linear-gradient(left, rgba(178, 178, 179, 0.25), #b2b2b3, rgba(178, 178, 179, 0.25));
+  background: -o-linear-gradient(left, rgba(178, 178, 179, 0.25), #b2b2b3, rgba(178, 178, 179, 0.25));
+  background: linear-gradient(left, rgba(178, 178, 179, 0.25), #b2b2b3, rgba(178, 178, 179, 0.25));
   border: none;
   height: 3px;
 }
@@ -66,7 +66,7 @@ footer {
 
 /* line 89, ../sass/screen.scss */
 small {
-  color: #d3d4d4;
+  color: #b2b2b3;
   font-family: 'Baskerville', 'Libre Baskerville', serif;
   letter-spacing: 2px;
   font-size: 0.5em;
@@ -119,7 +119,7 @@ small {
 .social_links a {
   font-size: 0.8em;
   padding: 0 0.5em;
-  border-right: 1px solid #d3d4d4;
+  border-right: 1px solid #b2b2b3;
 }
 /* line 138, ../sass/screen.scss */
 .social_links a:last-child {
