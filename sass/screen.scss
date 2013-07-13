@@ -26,6 +26,7 @@ body {
   color: $foreground_color;
   font-family: 'Quicksand', sans-serif;
   font-size: $base_size;
+  margin-top: 8em;
 }
 
 a, a:link, a:visited {
@@ -40,6 +41,11 @@ a, a:link, a:visited {
 header {
   @extend .container;
 
+  position: fixed;
+  background: $background-color;
+  width: 100% !important;
+  top: 0;
+  left: 25%;
   hr {
     margin-left: -15%;
     margin-right: -15%;
@@ -64,6 +70,7 @@ nav {
   }
   li {
     @include inline-block;
+    font-size: 0.8em;
     font-weight: 100;
     width: 48%;
     padding: 0.5em 0;
@@ -75,7 +82,8 @@ footer {
   text-align: center;
   position: relative;
   width: 95%;
-  margin: 3em auto 1em;
+  margin: 3em auto 3em;
+  height: 100px;
 }
 
 small {
@@ -141,6 +149,7 @@ small {
   .player {
     padding-bottom: 0;
     height: $player_height;
+    @include box-shadow(0 0 40px 10px $background-color);
   }
 }
 
@@ -148,17 +157,18 @@ small {
   .ivy_boy_logo {
     position: absolute;
     left: 0%;
-    top: -11%;
+    top: 11px;
   }
 
   .social_links {
     position: absolute;
     right: 0%;
-    top: 2px;
+    top: 17px;
+    text-align: right;
   }
 
   small {
     position: absolute;
-    top: 28px;
+    top: 37px;
   }
 }

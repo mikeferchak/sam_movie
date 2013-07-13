@@ -8,9 +8,10 @@ body {
   color: #d3d4d4;
   font-family: 'Quicksand', sans-serif;
   font-size: 22px;
+  margin-top: 8em;
 }
 
-/* line 31, ../sass/screen.scss */
+/* line 32, ../sass/screen.scss */
 a, a:link, a:visited {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -19,12 +20,20 @@ a, a:link, a:visited {
   color: #d3d4d4;
   text-decoration: none;
 }
-/* line 35, ../sass/screen.scss */
+/* line 36, ../sass/screen.scss */
 a:hover, a:link:hover, a:visited:hover {
   color: white;
 }
 
-/* line 43, ../sass/screen.scss */
+/* line 41, ../sass/screen.scss */
+header {
+  position: fixed;
+  background: #6e7077;
+  width: 100% !important;
+  top: 0;
+  left: 25%;
+}
+/* line 49, ../sass/screen.scss */
 header hr {
   margin-left: -15%;
   margin-right: -15%;
@@ -37,11 +46,11 @@ header hr {
   height: 3px;
 }
 
-/* line 62, ../sass/screen.scss */
+/* line 68, ../sass/screen.scss */
 nav ul {
   margin: 1em auto 2em;
 }
-/* line 65, ../sass/screen.scss */
+/* line 71, ../sass/screen.scss */
 nav li {
   display: -moz-inline-stack;
   display: inline-block;
@@ -49,20 +58,22 @@ nav li {
   *vertical-align: auto;
   zoom: 1;
   *display: inline;
+  font-size: 0.8em;
   font-weight: 100;
   width: 48%;
   padding: 0.5em 0;
 }
 
-/* line 74, ../sass/screen.scss */
+/* line 81, ../sass/screen.scss */
 footer {
   text-align: center;
   position: relative;
   width: 95%;
-  margin: 3em auto 1em;
+  margin: 3em auto 3em;
+  height: 100px;
 }
 
-/* line 81, ../sass/screen.scss */
+/* line 89, ../sass/screen.scss */
 small {
   color: #d3d4d4;
   font-family: 'Baskerville', 'Libre Baskerville', serif;
@@ -73,7 +84,7 @@ small {
   text-align: center;
 }
 
-/* line 91, ../sass/screen.scss */
+/* line 99, ../sass/screen.scss */
 .title {
   font-family: 'Baskerville', 'Libre Baskerville', serif;
   font-size: 4.8em;
@@ -83,14 +94,14 @@ small {
   font-weight: normal;
 }
 
-/* line 100, ../sass/screen.scss */
+/* line 108, ../sass/screen.scss */
 .container, header, nav, .player {
   width: 95%;
   max-width: 28em;
   margin: 0 auto;
 }
 
-/* line 106, ../sass/screen.scss */
+/* line 114, ../sass/screen.scss */
 .player {
   position: relative;
   padding-bottom: 56.25%;
@@ -98,7 +109,7 @@ small {
   padding-top: 25px;
   height: 0;
 }
-/* line 112, ../sass/screen.scss */
+/* line 120, ../sass/screen.scss */
 .player iframe {
   position: absolute;
   top: 0;
@@ -107,53 +118,57 @@ small {
   height: 100%;
 }
 
-/* line 121, ../sass/screen.scss */
+/* line 129, ../sass/screen.scss */
 .social_links, .ivy_boy_logo, small {
   display: block;
   margin: 0 auto 1em;
 }
 
-/* line 126, ../sass/screen.scss */
+/* line 134, ../sass/screen.scss */
 .social_links a {
   font-size: 0.8em;
   padding: 0 0.5em;
   border-right: 1px solid #d3d4d4;
 }
-/* line 130, ../sass/screen.scss */
+/* line 138, ../sass/screen.scss */
 .social_links a:last-child {
   border-right: none;
 }
 
 @media (min-width: 600px) {
-  /* line 137, ../sass/screen.scss */
+  /* line 145, ../sass/screen.scss */
   nav li {
     width: 24%;
   }
 
-  /* line 141, ../sass/screen.scss */
+  /* line 149, ../sass/screen.scss */
   .player {
     padding-bottom: 0;
     height: 15.75em;
+    -webkit-box-shadow: 0 0 40px 10px #6e7077;
+    -moz-box-shadow: 0 0 40px 10px #6e7077;
+    box-shadow: 0 0 40px 10px #6e7077;
   }
 }
 @media (min-width: 1100px) {
-  /* line 148, ../sass/screen.scss */
+  /* line 157, ../sass/screen.scss */
   .ivy_boy_logo {
     position: absolute;
     left: 0%;
-    top: -11%;
+    top: 11px;
   }
 
-  /* line 154, ../sass/screen.scss */
+  /* line 163, ../sass/screen.scss */
   .social_links {
     position: absolute;
     right: 0%;
-    top: 2px;
+    top: 17px;
+    text-align: right;
   }
 
-  /* line 160, ../sass/screen.scss */
+  /* line 170, ../sass/screen.scss */
   small {
     position: absolute;
-    top: 28px;
+    top: 37px;
   }
 }
