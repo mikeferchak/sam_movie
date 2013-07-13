@@ -8,7 +8,6 @@ body {
   color: #d3d4d4;
   font-family: 'Quicksand', sans-serif;
   font-size: 22px;
-  margin-top: 8em;
 }
 
 /* line 32, ../sass/screen.scss */
@@ -25,14 +24,6 @@ a:hover, a:link:hover, a:visited:hover {
   color: white;
 }
 
-/* line 41, ../sass/screen.scss */
-header {
-  position: fixed;
-  background: #6e7077;
-  width: 100% !important;
-  top: 0;
-  left: 25%;
-}
 /* line 49, ../sass/screen.scss */
 header hr {
   margin-left: -15%;
@@ -145,9 +136,6 @@ small {
   .player {
     padding-bottom: 0;
     height: 15.75em;
-    -webkit-box-shadow: 0 0 40px 10px #6e7077;
-    -moz-box-shadow: 0 0 40px 10px #6e7077;
-    box-shadow: 0 0 40px 10px #6e7077;
   }
 }
 @media (min-width: 1100px) {
